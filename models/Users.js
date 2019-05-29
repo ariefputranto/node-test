@@ -1,7 +1,6 @@
 const db = require("../config/db");
 const field = ['name', 'email', 'password', 'address', 'phone'];
 class Users {
-
 	list(callback) {
 	    db.getConnection(function(err, connection) {
 		    if (err) throw err;

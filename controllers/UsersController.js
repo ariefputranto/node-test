@@ -1,6 +1,5 @@
 const users = require('../models/Users');
 class UsersController {
-
 	list(req, res) {
 		var user_list = users.list(function(result){
 		    res.send(JSON.stringify(result));
